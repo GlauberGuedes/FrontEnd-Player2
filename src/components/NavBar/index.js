@@ -11,7 +11,7 @@ import { useState } from "react";
 
 export default function NavBar() {
   const { setToken } = useAuth();
-  const [selecionado, setSelecionado] = useState("Megaphone");
+  const [selecionado, setSelecionado] = useState("House");
   const [disparos, setDisparos] = useState(false);
   const [grupos, setGrupos] = useState(false);
   const [contatos, setContatos] = useState(false);
