@@ -1,0 +1,46 @@
+.header-editar {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  padding: 18px 0;
+  align-items: center;
+  border-bottom: 1px solid #CED4DE;
+}
+
+.header-editar h3 {
+  color: #B3B9C9;
+  font-weight: 500;
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.header-editar button {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-editar p {
+  color: #6E778D;
+}
+
+.header-editar svg {
+  cursor: pointer;
+}
+
+.header-editar .arrowDown {
+  margin-left: -30px;
+}
+
+.header-editar a {
+  color: #0EC3A3;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+@media screen and (max-width:400px) {
+  .header-editar {
+    display: none;
+  }
+}

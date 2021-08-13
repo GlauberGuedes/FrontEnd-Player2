@@ -1,0 +1,110 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 22px 24px 22px;
+  width: 299px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(71, 79, 99, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #EDEFF2;
+}
+
+.card-desativado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 22px 24px 22px;
+  width: 299px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(71, 79, 99, 0.05);
+  border-radius: 8px;
+  cursor:no-drop;
+  opacity: 0.4;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.date span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #6E778D;
+  margin-left: 9px;
+}
+
+.users {
+  display: flex;
+}
+
+.users p {
+  color: #B3B9C9;
+  font-weight: 500;
+  margin-left: 9px;
+}
+
+.users svg path{
+  stroke: #B3B9C9;
+}
+
+.menu {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.menu:hover {
+  background-color: #CED4DE;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  color: #6E778D;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  top: -80px;
+  right: -60px;
+  filter: drop-shadow(0px 10px 15px rgba(71, 79, 99, 0.15));
+}
+
+.seta {
+  height:20px;
+  width: 24px;
+  background-color: white;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 60px;
+  top: 35px;
+}
+
+.card-informacoes {
+  display: flex;
+  gap: 12px;
+}
+
+.card-informacoes svg {
+  background-color: #E4F5EB;
+  padding: 11px;
+  box-sizing: content-box;
+  border-radius: 30px;
+}
+
+.card-informacoes svg path {
+  stroke: #0EC3A3;
+}
+
+.card-banco {
+  color: #3B3F49;
+  font-weight: 500;
+}

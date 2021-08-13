@@ -1,0 +1,15 @@
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mensagem h5 {
+  font-weight: 500;
+  font-size: 12px;
+  color: #3B3F49;
+}
+
+.mensagem p {
+  color: #474F63;
+}

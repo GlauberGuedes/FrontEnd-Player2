@@ -1,0 +1,36 @@
+@import "./buttons.css";
+
+* {
+  margin: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #0EC3A3;
+}
+
+input:hover {
+  border: 1px solid #5BE3B0;
+}
+
+input::placeholder {
+  color: #B3B9C9;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #E4E7EC;
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #E4E7EC; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0EC3A3;
+  width: 8px;
+  border-radius: 5px;
+}

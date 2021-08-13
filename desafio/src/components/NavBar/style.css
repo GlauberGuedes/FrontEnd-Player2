@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: fixed;
+  align-items: center;
+  height: 100vh;
+  width: 44px;
+  background: linear-gradient(0deg, #0EA4C2 0%, #13CFB9 100%);
+  padding-bottom: 55px;
+}
+
+.navbar-logo {
+  padding: 24px 10px 80px 10px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.icon-selecionado {
+  box-sizing: content-box;
+  padding: 0 12px;
+  border-left: 3px solid white;
+}
+
+.navbar svg {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: auto;
+}
+
+@media screen and (max-width:400px) {
+  .navbar {
+    height: 44px;
+    padding-bottom: 0;
+  }
+  .navbar-logo {
+    padding: 13px 10px 0 10px;
+    border-bottom: none;
+  }
+}

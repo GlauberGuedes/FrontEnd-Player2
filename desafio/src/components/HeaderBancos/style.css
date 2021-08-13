@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  padding: 18px 0;
+  align-items: center;
+  border-bottom: 1px solid #CED4DE;
+}
+
+.header h3 {
+  color: #B3B9C9;
+  font-weight: 500;
+  font-size: 30px;
+  margin-right: auto;
+}
+
+.header button {
+  padding: 12px 24px;
+}
+
+.header p {
+  color: #6E778D;
+}
+
+.header svg {
+  cursor: pointer;
+}
+
+.header .arrowDown {
+  margin-left: -30px;
+}
+
+.header a {
+  color: #0EC3A3;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+@media screen and (max-width:400px) {
+  .header {
+    display: none;
+  }
+}

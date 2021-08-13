@@ -1,0 +1,114 @@
+.container-editar {
+  display: flex;
+  background-color: #F7F7F8;
+  min-height: 100vh;
+}
+
+.erro-editar {
+  height: 100vh;
+  width: calc(100vw - 44px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-editarMobile {
+  display: none;
+}
+
+.conteudo-editar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 44px;
+  padding: 0 25px 20px 25px;
+}
+
+.dados-editar {
+  box-shadow: 0px 4px 20px rgba(71, 79, 99, 0.05);
+  border-radius: 8px;
+  background-color: white;
+  padding: 24px;
+}
+
+.informacoes-banco {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  border-bottom: 0.5px solid #CED4DE;
+}
+
+.informacoes-banco h4 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #474F63;
+}
+
+.dados-banco {
+  display: flex;
+  gap: 48px;
+}
+
+.div-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.div-dados span {
+  color: #3B3F49;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.div-dados p {
+  color: #474F63;
+}
+
+.divisao {
+  border: 0.5px solid #CED4DE;
+  height: 32px;
+}
+
+.lista-mensagens {
+  display:flex;
+  flex-direction: column;
+  max-height: 350px;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+@media screen and (max-width:400px) {
+  .header-editarMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    margin-left: 44px;
+    border-bottom: 1px solid #CED4DE;
+  }
+
+  .header-editarMobile h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #B3B9C9;
+  }
+
+  .header-editarMobile svg path {
+    stroke: #B3B9C9;
+  }
+
+  .header-editarMobile svg {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+
+  .conteudo-editar {
+    margin-left: 0;
+    padding: 0 25px 20px 25px;
+  }
+
+}
