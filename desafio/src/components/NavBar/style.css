@@ -1,23 +1,65 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  position: relative;
   position: fixed;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
   width: 44px;
   background: linear-gradient(0deg, #0EA4C2 0%, #13CFB9 100%);
   padding-bottom: 55px;
 }
 
+.navbar:hover {
+  width: 240px;
+  z-index: 3;
+}
+
 .navbar-logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
   padding: 24px 10px 80px 10px;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 15px;
+}
+
+.navbar-logo h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.div-arrow {
+  display: flex;
+  flex-direction: column;
+}
+
+.icone-navbar {
+  display: flex;
+  gap: 15px;
+  color: #FFFFFF;
+  opacity: 0.75;
+  cursor: pointer;
+  padding: 15px 0 15px 15px;
+}
+
+.arrow {
+  margin-left: auto;
+  position: absolute;
+  right: 40px;
+}
+
+.invertida {
+  transform: rotate(180deg);
+}
+
+.icone-navbar svg path {
+  stroke: white;
 }
 
 .icon-selecionado {
   box-sizing: content-box;
-  padding: 0 12px;
   border-left: 3px solid white;
 }
 
@@ -29,6 +71,18 @@
 
 .logout {
   margin-top: auto;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  background-color: #0EA4C2;
+}
+
+.opcoes p {
+  padding: 12px 0 12px 44px;
+  color: white;
 }
 
 @media screen and (max-width:400px) {

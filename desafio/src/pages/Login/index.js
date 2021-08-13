@@ -15,18 +15,19 @@ export default function Login() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const { setToken, token } = useAuth();
+  const { setToken, token, setUsuario } = useAuth();
   const history = useHistory();
 
   useEffect(() => {
     if (token) {
-      history.push("/restaurantes");
+      history.push("/bancos");
     }
   }, []);
 
   async function onSubmit(data) {
 
     setToken("token");
+    setUsuario(data.email);
     history.push("/bancos");
   }
 
