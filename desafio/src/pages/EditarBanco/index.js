@@ -12,7 +12,7 @@ import useAuth from "../../hooks/useAuth";
 
 export default function EditarBanco() {
   const [banco, setBanco] = useState("");
-  const [mensagens, setMensagens] = useState(["1", "2", "3", "4"]);
+  const [mensagens, setMensagens] = useState(["1", "2", "3", "4", "5"]);
   const { code } = useParams();
   const [erro, setErro] = useState("");
   const history = useHistory();
@@ -57,7 +57,7 @@ export default function EditarBanco() {
         <div className="conteudo-editar">
           <HeaderEditar nomeBanco={banco.name}/>
           <div className="header-editarMobile">
-            <ArrowLeft />
+            <ArrowLeft onClick={() => history.push("/bancos")} />
             <h3>{banco.name}</h3>
             <SignOut onClick={logout} className="logout"/>
           </div>
