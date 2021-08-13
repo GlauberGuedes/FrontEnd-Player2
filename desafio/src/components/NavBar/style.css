@@ -87,11 +87,6 @@
 
 @media screen and (max-width:400px) {
   .navbar {
-    height: 44px;
-    padding-bottom: 0;
-  }
-  .navbar-logo {
-    padding: 13px 10px 0 10px;
-    border-bottom: none;
+    display: none;
   }
 }

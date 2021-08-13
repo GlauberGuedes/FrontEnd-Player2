@@ -1,19 +1,17 @@
 import "./style.css";
 import NavBar from "../../components/NavBar";
+import NavBarMobile from "../../components/NavBarMobile";
 import Card from "../../components/Card";
 import Loading from "../../components/Loading";
 import HeaderBancos from "../../components/HeaderBancos";
 import { ReactComponent as Search } from "../../assets/MagnifyingGlass.svg";
 import { ReactComponent as Close } from "../../assets/Close.svg";
-import { ReactComponent as SignOut } from "../../assets/SignOut.svg";
 import { useEffect, useState } from "react";
-import useAuth from "../../hooks/useAuth";
 
 export default function Bancos() {
   const [bancos, setBancos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filtroNomeBanco, setFiltroNomeBanco] = useState("");
-  const { setToken } = useAuth();
 
   async function getAPI() {
     setLoading(true);
@@ -30,10 +28,6 @@ export default function Bancos() {
     }
   }
 
-  function logout () {
-    setToken("");
-  }
-
   function filtroBancos(bank) {
     const nomeDoBanco = bank.name.toLowerCase();
     if (filtroNomeBanco && nomeDoBanco.includes(filtroNomeBanco.toLowerCase()))
@@ -48,11 +42,11 @@ export default function Bancos() {
   return (
     <div className="container-bancos">
       <NavBar />
+      <NavBarMobile />
       <div className="conteudo-bancos">
         <HeaderBancos />
         <div className="header-mobile">
           <h3>Bancos</h3>
-          <SignOut onClick={logout} className="logout"/>
         </div>
         <div className="bancos">
           <div className="quantidade-bancos">

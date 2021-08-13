@@ -1,0 +1,55 @@
+.navbar-mobile {
+  display: none;
+}
+
+@media screen and (max-width:400px) {
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    height: 44px;
+    width: 44px;
+    background: linear-gradient(0deg, #0EA4C2 0%, #13CFB9 100%);
+  }
+
+  .navbar-open {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    align-items: center;
+    z-index: 3;
+    height: 100vh;
+    width: 44px;
+    background: linear-gradient(0deg, #0EA4C2 0%, #13CFB9 100%);
+    padding : 10px;
+  }
+  
+  .icon-selecionado {
+    box-sizing: content-box;
+    padding: 0 12px;
+    border-left: 3px solid white;
+  }
+
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .navbar-mobile svg {
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+  }
+  
+  .logout {
+    margin-top: auto;
+  }
+} 

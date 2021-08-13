@@ -1,14 +1,13 @@
 import "./style.css";
 import NavBar from "../../components/NavBar";
+import NavBarMobile from "../../components/NavBarMobile";
 import Mensagem from "../../components/Mensagem";
 import HeaderEditar from "../../components/HeaderEditar";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ReactComponent as ArrowLeft } from "../../assets/ArrowLeft.svg";
-import { ReactComponent as SignOut } from "../../assets/SignOut.svg";
 import { useHistory } from "react-router-dom";
 import Loading from "../../components/Loading";
-import useAuth from "../../hooks/useAuth";
 
 export default function EditarBanco() {
   const [banco, setBanco] = useState("");
@@ -17,7 +16,6 @@ export default function EditarBanco() {
   const [erro, setErro] = useState("");
   const history = useHistory();
   const [loading, setLoading] = useState(false);
-  const { setToken } = useAuth();
 
   async function getAPI() {
     setErro("");
@@ -44,13 +42,11 @@ export default function EditarBanco() {
     getAPI();
   }, []);
 
-  function logout () {
-    setToken("");
-  }
 
   return (
     <div className="container-editar">
       <NavBar />
+      <NavBarMobile />
       {erro ? (
         <div className="erro-editar">{erro}</div>
       ) : (
@@ -59,7 +55,6 @@ export default function EditarBanco() {
           <div className="header-editarMobile">
             <ArrowLeft onClick={() => history.push("/bancos")} />
             <h3>{banco.name}</h3>
-            <SignOut onClick={logout} className="logout"/>
           </div>
           <div className="dados-editar">
             <div className="informacoes-banco">
