@@ -29,7 +29,7 @@ export default function Bancos() {
   }
 
   function filtroBancos(bank) {
-    const nomeDoBanco = bank.name.toLowerCase();
+    const nomeDoBanco = bank?.name?.toLowerCase();
     if (filtroNomeBanco && nomeDoBanco.includes(filtroNomeBanco.toLowerCase()))
       return bank;
     if (!filtroNomeBanco) return bank;
